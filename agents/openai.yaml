@@ -1,0 +1,4 @@
+interface:
+  display_name: "Metodo Strutturale Dinamico"
+  short_description: "Analisi metodica con gate di verifica"
+  default_prompt: "Usa $metodo-strutturale-dinamico per analizzare una decisione con domanda, oggetto-interesse, statica, dinamica, sintesi e risposta."
