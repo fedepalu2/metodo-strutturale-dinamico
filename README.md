@@ -2,10 +2,10 @@
 
 One repository with two compatible versions of the Metodo Strutturale Dinamico (MSD) skill:
 
-- **Codex version**: available at the repository root.
+- **Codex version 1.1.0**: install `codex/metodo-strutturale-dinamico/`. The root entrypoint is preserved for compatibility.
 - **Claude / Anthropic version**: available in `claude/metodo-strutturale-dinamico/`.
 
-Both versions implement the same workflow with explicit verification gates:
+Both variants use the same method. The revised Codex variant supports concise requested output and distinguishes its adapted gates from the source method; the Claude variant is preserved independently. The underlying analysis covers:
 
 1. Context
 2. Problem
@@ -18,7 +18,7 @@ Both versions implement the same workflow with explicit verification gates:
 
 ## Codex Installation
 
-Install the root of this repository as a Codex skill:
+Install only `codex/metodo-strutturale-dinamico/` from this repository as a Codex skill. Do not copy the whole repository: it contains a separate Claude SKILL.md which would otherwise be discovered as a duplicate. Destination:
 
 ```text
 ~/.codex/skills/metodo-strutturale-dinamico/
