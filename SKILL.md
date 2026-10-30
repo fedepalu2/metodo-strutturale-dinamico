@@ -1,8 +1,10 @@
 ---
 name: metodo-strutturale-dinamico
-description: "Apply the Metodo Strutturale Dinamico (MSD) to clarify complex problems, decisions, projects, conflicts, strategies, social situations, research questions, or personal/work choices through explicit steps and verification gates. Use when the user asks: 'applica il Metodo Strutturale Dinamico', 'analizza con il MSD', 'analisi strutturale dinamica', 'studiamo strutturalmente', 'ordina questo problema', 'aiutami a formulare domanda oggetto interesse', or asks for a rigorous analysis that must define problem, question, object-interest, static context, dynamic process, relations, composition, synthesis, and answer. Do not use for factual lookups, simple summaries, routine writing, or low-stakes choices that do not need a structured study."
+description: Apply the Metodo Strutturale Dinamico to a requested structured study of a complex problem or decision, keeping evidence, assumptions and the user interest explicit.
+metadata:
+  version: 1.1.0
+  canonical: true
 ---
-
 # Metodo Strutturale Dinamico
 
 Use this skill to run a structured MSD study. The goal is not to debate opinions; it is to move from a vague problem to a clear answer by keeping the user's interest fixed while studying the object in structure, process, relations, and composition.
@@ -15,8 +17,10 @@ Read `references/sources.md` when the user asks for sources, citations, provenan
 
 ## Operating Rules
 
-- Do not jump to the answer before completing the gates.
-- Keep the **Interest** fixed after Gate 3. If it changes, say so and restart from Gate 2 or 3.
+- Use the gates as an analysis aid, not as a claim that the sources prescribe this exact workflow.
+- Distinguish the method as documented from the operational gate labels introduced by this skill.
+- Give an immediate factual clarification when needed, then continue the requested study. Do not hide a useful answer behind process.
+- Keep the **Interest** fixed after Gate 3. If the user changes it, update the question and only the dependent analysis; preserve still-valid evidence.
 - Prefer one clarifying question when a gate is blocked. If the missing information is not blocking, continue with explicit assumptions.
 - Mark each gate as `PASS`, `PASS WITH ASSUMPTIONS`, or `STOP`.
 - If a gate is `STOP`, do not continue the study until the user supplies the missing information or authorizes assumptions.
@@ -253,7 +257,7 @@ Use this format unless the user asks for a different one:
 
 ## Short Mode
 
-For small decisions, keep all steps but compress the output. Never remove the gates; instead use one-line gate notes and short sections.
+For a requested brief analysis, apply the relevant steps internally and present the question, object-interest, synthesis, evidence gaps and next action. Show the complete gate table when requested or when it helps assess a substantial study. Do not force a long template onto a short answer.
 
 ## Optional Report
 
